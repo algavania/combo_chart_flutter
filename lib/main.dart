@@ -74,8 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
               opposedPosition: true),
           NumericAxis(
               name: 'yAxis',
-              title:
-                  AxisTitle(text: 'Secondary Y Axis (Profit in USD Millions)'),
               opposedPosition: true,
               interval: 5)
         ],
@@ -92,9 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               name: 'Profit',
               dataSource: _chartData,
               xValueMapper: (SalesData sales, _) => sales.salesMonth,
-              yValueMapper: (SalesData sales, _) => sales.profit,
-              xAxisName: 'xAxis',
-              yAxisName: 'yAxis'),
+              yValueMapper: (SalesData sales, _) => sales.profit,),
         ])));
   }
 
