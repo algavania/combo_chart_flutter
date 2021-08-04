@@ -1,4 +1,5 @@
 import 'package:chart_testing/chart_screen.dart';
+import 'package:chart_testing/combo_chart.dart';
 import 'package:chart_testing/pop_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PopScreen(),
+      home: ComboChartPage(),
     );
   }
 }
